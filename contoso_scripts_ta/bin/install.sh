@@ -79,7 +79,7 @@ close() {
 #   None
 #######################################
 install_splunk() {
-  /usr/bin/rpm -i $strRpmPath
+  rpm -i $strRpmPath
   chown -R splunk:splunk /opt/splunk
 }
 
@@ -122,7 +122,7 @@ set_localadmin() {
 #######################################
 start_splunk() {
   echo "Copying a custom init with some THP and Ulimit settings added"
-  cp ./files/splunk /etc/init.d/splunk
+  cp ./splunk /etc/init.d/splunk
   chmod +x /etc/init.d/splunk
   echo "Starting"
   /etc/init.d/splunk start
