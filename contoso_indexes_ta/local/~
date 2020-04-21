@@ -1,0 +1,46 @@
+# indexes.conf
+
+# Defaults
+[main]
+  homePath   = volume:primary/defaultdb/db
+  coldPath   = volume:primary/defaultdb/colddb
+  thawedPath = $SPLUNK_DB/defaultdb/thaweddb
+	
+[history]
+  homePath   = volume:primary/historydb/db
+  coldPath   = volume:primary/historydb/colddb
+  thawedPath = $SPLUNK_DB/historydb/thaweddb
+	
+[summary]
+  homePath   = volume:primary/summarydb/db
+  coldPath   = volume:primary/summarydb/colddb
+  thawedPath = $SPLUNK_DB/summarydb/thaweddb
+	
+[_internal]
+  homePath   = volume:primary/_internaldb/db
+  coldPath   = volume:primary/_internaldb/colddb
+  thawedPath = $SPLUNK_DB/_internaldb/thaweddb
+	
+[_introspection]
+  homePath   = volume:primary/_introspection/db
+  coldPath   = volume:primary/_introspection/colddb
+  thawedPath = $SPLUNK_DB/_introspection/thaweddb
+	
+[_telemetry]
+  homePath   = volume:primary/_telemetry/db
+  coldPath   = volume:primary/_telemetry/colddb
+  thawedPath = $SPLUNK_DB/_telemetry/thaweddb
+	
+[_audit]
+  homePath   = volume:primary/audit/db
+  coldPath   = volume:primary/audit/colddb
+  thawedPath = $SPLUNK_DB/audit/thaweddb
+	
+[_thefishbucket]
+  homePath   = volume:primary/fishbucket/db
+  coldPath   = volume:primary/fishbucket/colddb
+  thawedPath = $SPLUNK_DB/fishbucket/thaweddb
+
+# Best practice 
+[catchall]
+[stateful_snapshot]
