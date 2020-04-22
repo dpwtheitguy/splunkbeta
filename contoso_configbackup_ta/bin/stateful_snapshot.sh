@@ -15,7 +15,7 @@ backupDir=/data/backup #default backup directory is the home directory
 
 #Create a function that will create new events within the Splunk UI
 newEvent (){
-    echo   `date`
+    echo `date  "+%Y/%d/%m %H:%M:%S"`
     echo "log_level = INFO"
     echo "status = $1"
     echo "message = $2"
